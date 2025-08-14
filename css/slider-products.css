@@ -1,0 +1,114 @@
+.section-title {
+  margin: 20px 0;
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 50px;
+}
+
+.popular-products {
+  max-width: 1920px;
+  margin: auto; /* резиновый верх = 100px на Full HD */
+  /* резиновый правый = 182px на Full HD */
+  padding-bottom: calc(
+    100 / 1080 * 100vh
+  ); /* резиновый низ = 100px на Full HD */
+  padding-left: calc(
+    274 / 1920 * 100vw
+  ); /* резиновый левый = 274px на Full HD */
+}
+
+
+
+.product-card {
+  position: relative;
+  background: #fff;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 310px !important; /* фиксированная ширина карточки */
+}
+
+
+
+.product-card img {
+  max-width: 310px;
+  width: 100%;
+  border-radius: 8px;
+}
+
+.product-name {
+  font-size: 14px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.product-price {
+  font-weight: bold;
+  color: #255A7A;
+  display: block;
+  text-align: center;
+}
+
+.wishlist-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.wishlist-btn:hover {
+  color: red;
+}
+
+.splide__pagination {
+  position: static !important;
+  margin-top: 50px; /* или calc(...) если хочешь резиново */
+  text-align: center;
+}
+
+
+.splide__pagination__page {
+  background: #ccc;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 5px;
+  opacity: 1;
+  transition: background 0.3s;
+}
+
+.splide__pagination__page.is-active {
+  background: #000;
+}
+
+
+@media (max-width: 768px) {
+  .product-card {
+    width: 154px !important;
+  }
+
+  .product-card img {
+    max-width: 154px;
+  }
+
+
+  .popular-products {
+    max-width: 1920px;
+    margin: auto;
+    padding-bottom: calc(100 / 1080 * 100vh);
+    padding-left: 5%;
+}
+
+.section-title {
+  margin: 20px 0;
+  font-family: Raleway;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 32px;
+}
+
+}
