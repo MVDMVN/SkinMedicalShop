@@ -1,11 +1,322 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SkinMedical Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/rec.css" />
+    <link rel="stylesheet" href="css/brands.css" />
+    <link rel="stylesheet" href="css/reviews.css" />
+    <link rel="stylesheet" href="css/footer.css" />
   </head>
   <body>
-    <div></div>
+    <section class="rec">
+      <div class="container">
+        <div class="rec__grid">
+          <div class="rec__text">
+            <span class="rec__eyebrow">NEW COLLECTION</span>
+            <h2 class="rec__title">ЛІТНЯ РЕКОМЕНДАЦІЯ</h2>
+            <p class="rec__desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <section id="rec-splide" class="splide rec__slider" aria-label="Рекомендації">
+            <div class="splide__track">
+              <ul class="splide__list">
+                <li class="splide__slide" style="width: 280px">
+                  <img src="images/rec/rec-image-1.png" alt="SPF" class="card__img" />
+                </li>
+
+                <li class="splide__slide" style="width: 280px">
+                  <img src="images/rec/rec-image-2.png" alt="SPF" class="card__img" />
+                </li>
+
+                <li class="splide__slide" style="width: 280px">
+                  <img src="images/rec/rec-image-3.png" alt="SPF" class="card__img" />
+                </li>
+
+                <li class="splide__slide" style="width: 280px">
+                  <img src="images/rec/rec-image-1.png" alt="SPF" class="card__img" />
+                </li>
+              </ul>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="container">
+        <p class="brands__title">Бренди</p>
+        <section id="brands-splide" class="splide brands__slider" aria-label="Brands">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <img src="images/brands/brand-1.png" alt="Brand 1" class="card__img" />
+              </li>
+
+              <li class="splide__slide">
+                <img src="images/brands/brand-2.png" alt="Brand 2" class="card__img" />
+              </li>
+
+              <li class="splide__slide">
+                <img src="images/brands/brand-3.png" alt="Brand 3" class="card__img" />
+              </li>
+
+              <li class="splide__slide">
+                <img src="images/brands/brand-4.png" alt="Brand 4" class="card__img" />
+              </li>
+              <li class="splide__slide">
+                <img src="images/brands/brand-1.png" alt="Brand 1" class="card__img" />
+              </li>
+
+              <li class="splide__slide">
+                <img src="images/brands/brand-2.png" alt="Brand 2" class="card__img" />
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="container">
+        <section id="reviews-splide" class="splide reviews__slider" aria-label="Reviews">
+          <div class="splide__track">
+            <ul class="splide__list">
+              <li class="splide__slide">
+                <div class="review-card">
+                  <div class="review-card__thumb">
+                    <img src="images/products/product-1.png" alt="Allies of Skin Peptides & Antioxidants Advanced" />
+                  </div>
+
+                  <div class="review-card__stars" aria-label="4 из 5">
+                    <!-- заполни нужное кол-во .star--filled -->
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star" aria-hidden="true"></span>
+                  </div>
+
+                  <h3 class="review-card__title">
+                    <a href="#">Allies of Skin Peptides & Antioxidants Advanced</a>
+                  </h3>
+
+                  <p class="review-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                  <div class="review-card__meta">
+                    <span class="review-card__author">Карина</span>
+                    <span class="review-card__dot" aria-hidden="true">•</span>
+                    <time class="review-card__date" datetime="2025-06-23">23.06.2025</time>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="review-card">
+                  <div class="review-card__thumb">
+                    <img src="images/products/product-1.png" alt="Allies of Skin Peptides & Antioxidants Advanced" />
+                  </div>
+
+                  <div class="review-card__stars" aria-label="4 из 5">
+                    <!-- заполни нужное кол-во .star--filled -->
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star" aria-hidden="true"></span>
+                  </div>
+
+                  <h3 class="review-card__title">
+                    <a href="#">Allies of Skin Peptides & Antioxidants Advanced</a>
+                  </h3>
+
+                  <p class="review-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                  <div class="review-card__meta">
+                    <span class="review-card__author">Карина</span>
+                    <span class="review-card__dot" aria-hidden="true">•</span>
+                    <time class="review-card__date" datetime="2025-06-23">23.06.2025</time>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="review-card">
+                  <div class="review-card__thumb">
+                    <img src="images/products/product-1.png" alt="Allies of Skin Peptides & Antioxidants Advanced" />
+                  </div>
+
+                  <div class="review-card__stars" aria-label="4 из 5">
+                    <!-- заполни нужное кол-во .star--filled -->
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star" aria-hidden="true"></span>
+                  </div>
+
+                  <h3 class="review-card__title">
+                    <a href="#">Allies of Skin Peptides & Antioxidants Advanced</a>
+                  </h3>
+
+                  <p class="review-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                  <div class="review-card__meta">
+                    <span class="review-card__author">Карина</span>
+                    <span class="review-card__dot" aria-hidden="true">•</span>
+                    <time class="review-card__date" datetime="2025-06-23">23.06.2025</time>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="review-card">
+                  <div class="review-card__thumb">
+                    <img src="images/products/product-1.png" alt="Allies of Skin Peptides & Antioxidants Advanced" />
+                  </div>
+
+                  <div class="review-card__stars" aria-label="4 из 5">
+                    <!-- заполни нужное кол-во .star--filled -->
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star" aria-hidden="true"></span>
+                  </div>
+
+                  <h3 class="review-card__title">
+                    <a href="#">Allies of Skin Peptides & Antioxidants Advanced</a>
+                  </h3>
+
+                  <p class="review-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                  <div class="review-card__meta">
+                    <span class="review-card__author">Карина</span>
+                    <span class="review-card__dot" aria-hidden="true">•</span>
+                    <time class="review-card__date" datetime="2025-06-23">23.06.2025</time>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="review-card">
+                  <div class="review-card__thumb">
+                    <img src="images/products/product-1.png" alt="Allies of Skin Peptides & Antioxidants Advanced" />
+                  </div>
+
+                  <div class="review-card__stars" aria-label="4 из 5">
+                    <!-- заполни нужное кол-во .star--filled -->
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star" aria-hidden="true"></span>
+                  </div>
+
+                  <h3 class="review-card__title">
+                    <a href="#">Allies of Skin Peptides & Antioxidants Advanced</a>
+                  </h3>
+
+                  <p class="review-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                  <div class="review-card__meta">
+                    <span class="review-card__author">Карина</span>
+                    <span class="review-card__dot" aria-hidden="true">•</span>
+                    <time class="review-card__date" datetime="2025-06-23">23.06.2025</time>
+                  </div>
+                </div>
+              </li>
+
+              <li class="splide__slide">
+                <div class="review-card">
+                  <div class="review-card__thumb">
+                    <img src="images/products/product-1.png" alt="Allies of Skin Peptides & Antioxidants Advanced" />
+                  </div>
+
+                  <div class="review-card__stars" aria-label="4 из 5">
+                    <!-- заполни нужное кол-во .star--filled -->
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star star--filled" aria-hidden="true"></span>
+                    <span class="star" aria-hidden="true"></span>
+                  </div>
+
+                  <h3 class="review-card__title">
+                    <a href="#">Allies of Skin Peptides & Antioxidants Advanced</a>
+                  </h3>
+
+                  <p class="review-card__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+
+                  <div class="review-card__meta">
+                    <span class="review-card__author">Карина</span>
+                    <span class="review-card__dot" aria-hidden="true">•</span>
+                    <time class="review-card__date" datetime="2025-06-23">23.06.2025</time>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-bar">
+          <a class="footer-brand" href="/" aria-label="Лого">
+            <img src="images/footer-logo.png" width="44" height="44" alt="Лого" />
+            <span class="footer-brand__name">Центр естетичної медицини</span>
+          </a>
+
+          <nav class="footer-nav" aria-label="Основні посилання">
+            <a href="#">Акції</a>
+            <a href="#">Про нас</a>
+            <a href="#">Послуги</a>
+            <a href="#">Ціни</a>
+            <a href="#">Блог</a>
+            <a href="#">Контакти</a>
+          </nav>
+
+          <div class="footer-social" aria-label="Соціальні мережі">
+            <a href="#" aria-label="Instagram" class="icn icn--ig" rel="noopener"></a>
+            <a href="#" aria-label="Facebook" class="icn icn--fb" rel="noopener"></a>
+          </div>
+        </div>
+
+        <div class="footer-contacts">
+          <a class="footer-phone" href="tel:+380000000000">+38 095 000 00 00</a>
+          <div class="footer-social footer-social--mobile">
+            <a href="#" aria-label="Instagram" class="icn icn--ig"></a>
+            <a href="#" aria-label="Facebook" class="icn icn--fb"></a>
+          </div>
+          <address class="footer-address">м. Київ, вул. Прикладна, 17/45</address>
+        </div>
+
+        <div class="footer-links-grid" aria-label="Навігація">
+          <ul class="footer-col">
+            <li><a href="#">Акції</a></li>
+            <li><a href="#">Про нас</a></li>
+            <li><a href="#">Послуги</a></li>
+          </ul>
+          <ul class="footer-col">
+            <li><a href="#">Ціни</a></li>
+            <li><a href="#">Блог</a></li>
+            <li><a href="#">Контакти</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-copy">© Copyright 2025. Усі права захищені.</div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+
+    <script src="js/script.js"></script>
   </body>
 </html>

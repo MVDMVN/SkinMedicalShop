@@ -1,0 +1,46 @@
+.brands {
+  background: url("../images/brands/brands-bg.png") center center no-repeat;
+}
+
+.brands__title {
+  font-size: 38px;
+  line-height: 42px;
+  margin-bottom: 40px;
+}
+
+.brands .splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.brands .splide__pagination {
+  bottom: -2.5em;
+}
+
+.brands .splide__pagination__page.is-active {
+  background-color: rgba(42, 86, 167, 0.8);
+  transform: none;
+}
+
+.brands .splide__pagination__page {
+  width: 10px;
+  height: 10px;
+  background: #000;
+  opacity: 0.35;
+  margin: 0 6px;
+}
+
+.brands .splide__pagination__page.is-active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 768px) {
+  .brands__title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+}

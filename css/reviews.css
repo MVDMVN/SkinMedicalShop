@@ -1,0 +1,146 @@
+:root {
+  --rc-bg: #fff;
+  --rc-border: #e7e7ea;
+  --rc-shadow: 0 3px 18px rgba(0, 0, 0, 0.06);
+  --rc-radius: 16px;
+
+  --rc-text: #222;
+  --rc-muted: #6b7280;
+  --rc-link: #0a3d8f; /* синий, как на скрине */
+  --rc-star: #b7c6e3; /* контур/пустая звезда */
+  --rc-star-active: #1f4e9d; /* заполненная звезда */
+}
+
+.review-card {
+  background: var(--rc-bg);
+  border: 1px solid #cecece;
+  border-radius: var(--rc-radius);
+  padding: 24px 24px 22px;
+  text-align: center;
+  color: var(--rc-text);
+  display: grid;
+  grid-template-rows: auto auto auto 1fr auto;
+  row-gap: 12px;
+}
+
+.review-card__thumb {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  margin: 0 auto 6px;
+  background: #f0f2f5;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  border: 1px solid var(--rc-border);
+}
+.review-card__thumb img {
+  width: 110px;
+  height: 110px;
+  object-fit: contain;
+  display: block;
+}
+
+.review-card__stars {
+  display: inline-flex;
+  gap: 6px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2px;
+}
+.star {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: conic-gradient(from 0deg, transparent 0 0) no-repeat;
+  -webkit-mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27l6.18 3.73-1.64-7.03L21.5 9.24l-7.12-.61L12 2 9.62 8.63 2.5 9.24l4.96 4.73L5.82 21z"/></svg>')
+    center/contain;
+  mask: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 17.27l6.18 3.73-1.64-7.03L21.5 9.24l-7.12-.61L12 2 9.62 8.63 2.5 9.24l4.96 4.73L5.82 21z"/></svg>')
+    center/contain;
+  background-color: var(--rc-star);
+}
+.star--filled {
+  background-color: var(--rc-star-active);
+}
+
+.review-card__title {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+.review-card__title a {
+  color: var(--rc-link);
+  text-underline-offset: 2px;
+}
+.review-card__title a:hover {
+  text-decoration: underline;
+}
+
+.review-card__text {
+  margin: 0;
+  color: var(--rc-muted);
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.review-card__meta {
+  display: inline-flex;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  margin-top: 8px;
+  font-size: 13px;
+}
+.review-card__author {
+  font-weight: 700;
+}
+.review-card__date {
+  color: var(--rc-muted);
+}
+.review-card__dot {
+  color: var(--rc-muted);
+}
+
+.reviews__slider .splide__arrow--prev {
+  left: -1.5em;
+  background: none;
+  width: 12px;
+  height: 12px;
+}
+
+.reviews__slider .splide__arrow--next {
+  right: -1.5em;
+  background: none;
+  width: 12px;
+  height: 12px;
+}
+
+.reviews__slider .splide__pagination {
+  bottom: -1.5em;
+}
+
+@media screen and (max-width: 768px) {
+  .reviews__slider .splide__arrow--prev {
+    left: -1em;
+  }
+
+  .reviews__slider .splide__arrow--next {
+    right: -1em;
+  }
+}
+
+/* адаптив — лёгкая компактность на узких */
+@media (max-width: 480px) {
+  .review-card {
+    padding: 18px 16px 16px;
+    row-gap: 10px;
+  }
+
+  .review-card__title {
+    font-size: 16px;
+  }
+  .review-card__text {
+    font-size: 14px;
+  }
+}

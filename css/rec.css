@@ -1,0 +1,107 @@
+.rec {
+  background: #f3f3f3;
+}
+
+.rec__grid {
+  display: flex;
+  justify-content: center;
+  /* grid-template-columns: minmax(280px, 460px) 1fr; */
+  gap: 56px;
+  align-items: center;
+}
+
+.rec__text {
+  max-width: 550px;
+  width: 100%;
+}
+
+.rec__eyebrow {
+  display: inline-block;
+  font-size: 26px;
+  letter-spacing: 0.16em;
+  color: #777;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.rec__title {
+  margin: 0 0 14px;
+  font-weight: 800;
+  font-size: clamp(32px, 3vw, 40px);
+  line-height: 1.12;
+}
+.rec__desc {
+  margin: 0;
+  color: #4b4b4b;
+  line-height: 1.6;
+}
+
+.rec__slider {
+  padding: 0 24px;
+}
+
+.rec__slider .splide__slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.rec__slider .splide__arrow--prev {
+  left: -0.5em;
+  background: none;
+  width: 12px;
+  height: 12px;
+}
+
+.rec__slider .splide__arrow--next {
+  right: -0.5em;
+  background: none;
+  width: 12px;
+  height: 12px;
+}
+
+.rec__slider .splide__pagination {
+  bottom: -1.5em;
+}
+
+.rec__slider .splide__pagination__page.is-active {
+  background-color: rgba(42, 86, 167, 0.8);
+  transform: none;
+}
+
+/* Пагинация-крапки */
+.rec__pagination {
+  margin-top: 14px;
+}
+.rec__pagination .splide__pagination__page {
+  width: 8px;
+  height: 8px;
+  background: #000;
+  opacity: 0.35;
+  margin: 0 6px;
+}
+.rec__pagination .splide__pagination__page.is-active {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .rec__grid {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 36px;
+  }
+}
+@media (max-width: 768px) {
+  .rec__eyebrow {
+    font-size: 16px;
+  }
+
+  .rec__slider {
+    padding: 0;
+  }
+
+  .rec__slider .splide__arrow--prev,
+  .rec__slider .splide__arrow--next {
+    display: none;
+  }
+}
