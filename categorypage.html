@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Skinmedical SHOP</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/css/header.css" />
+    <link rel="stylesheet" href="/css/grid.css" />
+      <link rel="stylesheet" href="/css/slider-products.css" />
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/css/splide.min.css" />
+
+  </head>
+  <body>
+    <!-- Верхняя панель -->
+    <header class="topbar">
+      <div class="container topbar__row">
+        <button class="burger" aria-label="menu">
+          <span></span><span></span><span></span>
+        </button>
+
+        <div class="topbar__left">
+          <div class="search search--mobile">
+            <svg class="search-icon" width="24" height="24" viewBox="0 0 23 23" xmlns="http://www.w3.org/2000/svg">
+              <path fill="currentColor" d="M20.5892 19.1139L16.4359 14.9589C17.6812 13.3361 18.2626 11.3004 18.0621 9.26478C17.8617 7.22911 16.8944 5.34591 15.3565 3.99719C13.8187 2.64846 11.8254 1.93521 9.78094 2.00212C7.73652 2.06903 5.79411 2.91109 4.34771 4.35748C2.90132 5.80387 2.05926 7.74629 1.99235 9.7907C1.92544 11.8351 2.63869 13.8284 3.98742 15.3663C5.33614 16.9042 7.21935 17.8714 9.25501 18.0719C11.2907 18.2723 13.3264 17.6909 14.9491 16.4456L19.1059 20.6033C19.2035 20.7009 19.3194 20.7784 19.447 20.8312C19.5745 20.884 19.7112 20.9112 19.8493 20.9112C19.9873 20.9112 20.124 20.884 20.2516 20.8312C20.3791 20.7784 20.495 20.7009 20.5927 20.6033C20.6903 20.5057 20.7677 20.3898 20.8205 20.2622C20.8734 20.1347 20.9006 19.998 20.9006 19.8599C20.9006 19.7219 20.8734 19.5852 20.8205 19.4576C20.7677 19.3301 20.6903 19.2142 20.5927 19.1165L20.5892 19.1139ZM4.10462 10.0614C4.10462 8.88517 4.4534 7.73538 5.10687 6.75741C5.76033 5.77943 6.68913 5.01719 7.7758 4.56707C8.86247 4.11696 10.0582 3.99919 11.2118 4.22866C12.3654 4.45812 13.4251 5.02452 14.2568 5.85622C15.0885 6.68792 15.6549 7.74757 15.8843 8.90118C16.1138 10.0548 15.996 11.2505 15.5459 12.3372C15.0958 13.4239 14.3336 14.3527 13.3556 15.0061C12.3776 15.6596 11.2278 16.0084 10.0516 16.0084C8.47487 16.0067 6.96317 15.3797 5.84824 14.2647C4.73332 13.1498 4.10624 11.6381 4.10462 10.0614Z"/>
+            </svg>
+          </div>
+
+          <a class="logo" href="#"><img src="/images/header-logo.png" alt="Skin Medical" /></a>
+
+          <form class="search search--desktop" role="search">
+            <input class="search__input" type="search" placeholder="Пошук товару" aria-label="Пошук товару" />
+            <button class="search__btn" aria-label="Пошук"></button>
+          </form>
+        </div>
+
+        <div class="actions">
+          <button class="lang" aria-label="Змінити мову">
+            <span class="lang__flag"></span>
+            <span class="lang__text">UKR</span>
+            <span class="lang__arrow"></span>
+          </button>
+
+          <button class="icon-btn icon-phone" aria-label="Телефон"></button>
+          <button class="icon-btn icon-fav" aria-label="Обране"></button>
+          <button class="icon-btn icon-cart" aria-label="Кошик"></button>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <div class="container nav__row">
+          <a class="nav__link nav__link--sale" href="#">Sale</a>
+          <a class="nav__link" href="#">Бренд</a>
+          <a class="nav__link" href="#">Догляд за обличчям</a>
+          <a class="nav__link" href="#">Сонцезахист SPF</a>
+          <a class="nav__link" href="#">Догляд за волоссям</a>
+          <a class="nav__link" href="#">Догляд за тілом</a>
+          <a class="nav__link" href="#">Korean Skincare</a>
+          <a class="nav__link" href="#">Косметичні набори</a>
+          <a class="nav__link" href="#">БАДи</a>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div id="hero-slider" class="splide">
+        <div class="splide__track">
+          <ul class="splide__list">
+            <li class="splide__slide">
+              <img src="images/main-header-bg.jpg" alt="Skinmedical hero" class="hero__bg">
+              <div class="hero__content">
+                <h1 class="hero__title">SKINMEDICAL SHOP</h1>
+                <p class="hero__subtitle">Професійна косметика</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img src="images/main-header-bg.jpg" alt="Skinmedical hero" class="hero__bg">
+              <div class="hero__content">
+                <h1 class="hero__title">SKINMEDICAL SHOP</h1>
+                <p class="hero__subtitle">Професійна косметика</p>
+              </div>
+            </li>
+            <li class="splide__slide">
+              <img src="images/main-header-bg.jpg" alt="Skinmedical hero" class="hero__bg">
+              <div class="hero__content">
+                <h1 class="hero__title">SKINMEDICAL SHOP</h1>
+                <p class="hero__subtitle">Професійна косметика</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+<section class="categories-section">
+    <div class="categories-grid">
+      <div class="item a"><img src="images/main-cards/main-photo-1.png" alt=""><span>Догляд за обличчям</span></div>
+      <div class="item b"><img src="images/main-cards/main-photo-2.png" alt=""><span>Korean Skincare</span></div>
+      <div class="item c"><img src="images/main-cards/main-photo-3.png" alt=""><span>Категорія 03</span></div>
+      <div class="item d"><img src="images/main-cards/main-photo-4.png" alt=""><span>Косметичні набори</span></div>
+      <div class="item e"><img src="images/main-cards/main-photo-5.png" alt=""><span>Сонцезахист SPF</span></div>
+      <div class="item f"><img src="images/main-cards/main-photo-6.png" alt=""><span>Догляд за волоссям</span></div>
+      <div class="item g"><img src="images/main-cards/main-photo-7.png" alt=""><span>Креми</span></div>
+      <div class="item h"><img src="images/main-cards/main-photo-8.png" alt=""><span>БАДи</span></div>
+      <div class="item i"><img src="images/main-cards/main-photo-9.png" alt=""><span>Догляд за тілом</span></div>
+    </div>
+</section>
+
+
+<section class="popular-products">
+  <h2 class="section-title">Популярні товари</h2>
+  <div class="splide" id="popular-slider">
+    <div class="splide__track">
+      <ul class="splide__list">
+
+        <!-- Карточка -->
+        <li class="splide__slide product-card">
+         
+          <img src="images/products/photo1.png" alt="Product 1">
+          <p class="product-name">Allies of Skin Peptides & Antioxidants Advanced Firming Daily Treatment</p>
+          <span class="product-price">2,700 грн</span>
+        </li>
+
+        <li class="splide__slide product-card">
+   
+          <img src="images/products/photo2.png" alt="Product 2">
+          <p class="product-name">Allies of Skin 20% Vitamin C Brighten + Firm Serum</p>
+          <span class="product-price">1,460 грн</span>
+        </li>
+
+        <li class="splide__slide product-card">
+        
+          <img src="images/products/photo3.png" alt="Product 3">
+          <p class="product-name">Allies of Skin Azelaic & Kojic Advanced Clarifying Serum</p>
+          <span class="product-price">4,660 грн</span>
+        </li>
+
+        <li class="splide__slide product-card">
+
+          <img src="images/products/photo1.png" alt="Product 4">
+          <p class="product-name">Allies of Skin Peptides & Antioxidants Advanced Firming Daily Treatment</p>
+          <span class="product-price">2,700 грн</span>
+        </li>
+
+        <li class="splide__slide product-card">
+    
+          <img src="images/products/photo2.png" alt="Product 5">
+          <p class="product-name">Allies of Skin Peptides & Omegas Firming Eye Cream</p>
+          <span class="product-price">4,770 грн</span>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>
+
+
+<!-- Подключение JS Splide -->
+<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4/dist/js/splide.min.js"></script>
+<!-- Инициализация после загрузки DOM -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    new Splide('#hero-slider', {
+      type: 'loop',
+      autoplay: true,
+      interval: 3000,
+      pauseOnHover: false,
+      arrows: true,
+      pagination: true,
+      speed: 800,
+      
+    }).mount();
+  });
+
+document.addEventListener('DOMContentLoaded', function () {
+  new Splide('#popular-slider', {
+    type: 'loop',
+    perMove: 1,
+    perPage: 4,        // сколько карточек в ряду
+    gap: '40px',       // отступ между карточками
+    pagination: true,
+    arrows: false,
+    breakpoints: {
+      1024: { perPage: 3 },
+      768: { perPage: 2 },
+      480: { perPage: 1 },
+    },
+
+     breakpoints: {
+    768: {
+      perPage: 2,
+      gap: '12px', // мобильный gap
+    },
+  },
+  }).mount();
+});
+
+
+
+  
+</script>
+
+
+
+
+
+  </body>
+</html>
