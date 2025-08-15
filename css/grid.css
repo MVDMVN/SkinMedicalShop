@@ -85,4 +85,17 @@
   }
 }
 
+@media (max-width: 640px) {
+
+  @media (max-width: 640px) {
+  .item.a,
+  .item.b,
+  .item.c,
+  .item.d {
+    display: none;
+  }
+}
+
+
+}
 /* Мобилки */
