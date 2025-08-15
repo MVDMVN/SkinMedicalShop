@@ -2,7 +2,7 @@
   max-width: 1920px;
   width: 100%;
 
- margin: 0 auto;
+  margin: 0 auto;
 }
 
 .categories-grid {
@@ -11,13 +11,13 @@
     "a b c d"
     "e e f g"
     "e e h i";
-  grid-template-columns: repeat(4, 1fr);           /* резиновые колонки */
-  grid-auto-rows: 1fr;                              /* строки равной высоты */
-  gap: 2%;                                          /* резиновый gap */
-  padding-top: calc(100 / 1080 * 100vh);           /* резиновый верх = 100px на Full HD */
-  padding-right: calc(182 / 1920 * 100vw);         /* резиновый правый = 182px на Full HD */
-  padding-bottom: calc(100 / 1080 * 100vh);        /* резиновый низ = 100px на Full HD */
-  padding-left: calc(274 / 1920 * 100vw);          /* резиновый левый = 274px на Full HD */
+  grid-template-columns: repeat(4, 1fr); /* резиновые колонки */
+  grid-auto-rows: 1fr; /* строки равной высоты */
+  gap: 2%; /* резиновый gap */
+  padding-top: calc(100 / 1080 * 100vh); /* резиновый верх = 100px на Full HD */
+  padding-right: calc(182 / 1920 * 100vw); /* резиновый правый = 182px на Full HD */
+  padding-bottom: calc(100 / 1080 * 100vh); /* резиновый низ = 100px на Full HD */
+  padding-left: calc(274 / 1920 * 100vw); /* резиновый левый = 274px на Full HD */
   justify-content: center;
 }
 
@@ -28,7 +28,7 @@
   cursor: pointer;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   width: 100%;
-  aspect-ratio: 351 / 274;                          /* сохраняем пропорции */
+  aspect-ratio: 351 / 274; /* сохраняем пропорции */
 }
 
 .item img {
@@ -44,7 +44,7 @@
   left: 10px;
   color: #fff;
   font-weight: 500;
-  text-shadow: 0 0 4px rgba(0,0,0,0.7);
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.7);
   z-index: 2;
   font-size: 1rem;
 }
@@ -52,7 +52,7 @@
 /* Ховер */
 .item:hover {
   transform: scale(1.03);
-  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
 .item:hover img {
@@ -73,8 +73,7 @@
       "a b"
       "c d"
       "e e"
-      "f g"
-      "h i";
+      "f g";
     gap: 2%;
     padding: 5%; /* резиновый padding для планшета */
   }
@@ -86,16 +85,13 @@
 }
 
 @media (max-width: 640px) {
-
   @media (max-width: 640px) {
-  .item.a,
-  .item.b,
-  .item.c,
-  .item.d {
-    display: none;
+    .item.a,
+    .item.b,
+    .item.c,
+    .item.d {
+      display: none;
+    }
   }
-}
-
-
 }
 /* Мобилки */
