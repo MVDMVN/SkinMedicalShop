@@ -10,15 +10,17 @@
   max-width: 1920px;
   margin: auto; /* резиновый верх = 100px на Full HD */
   /* резиновый правый = 182px на Full HD */
-  padding-bottom: calc(
-    100 / 1080 * 100vh
-  ); /* резиновый низ = 100px на Full HD */
-  padding-left: calc(
-    274 / 1920 * 100vw
-  ); /* резиновый левый = 274px на Full HD */
+  padding-bottom: calc(100 / 1080 * 100vh); /* резиновый низ = 100px на Full HD */
+  padding-left: calc(274 / 1920 * 100vw); /* резиновый левый = 274px на Full HD */
 }
 
-
+.discount-products {
+  max-width: 1920px;
+  margin: auto; /* резиновый верх = 100px на Full HD */
+  /* резиновый правый = 182px на Full HD */
+  padding-bottom: calc(100 / 1080 * 100vh); /* резиновый низ = 100px на Full HD */
+  padding-left: calc(274 / 1920 * 100vw); /* резиновый левый = 274px на Full HD */
+}
 
 .product-card {
   position: relative;
@@ -28,8 +30,6 @@
   text-align: center;
   width: 310px !important; /* фиксированная ширина карточки */
 }
-
-
 
 .product-card img {
   max-width: 310px;
@@ -45,7 +45,7 @@
 
 .product-price {
   font-weight: bold;
-  color: #255A7A;
+  color: #255a7a;
   display: block;
   text-align: center;
 }
@@ -66,10 +66,9 @@
 
 .splide__pagination {
   position: static !important;
-  margin-top: 50px; /* или calc(...) если хочешь резиново */
+  margin-top: 50px;
   text-align: center;
 }
-
 
 .splide__pagination__page {
   background: #ccc;
@@ -85,7 +84,6 @@
   background: #000;
 }
 
-
 @media (max-width: 768px) {
   .product-card {
     width: 154px !important;
@@ -95,20 +93,24 @@
     max-width: 154px;
   }
 
-
   .popular-products {
     max-width: 1920px;
     margin: auto;
     padding-bottom: calc(100 / 1080 * 100vh);
     padding-left: 5%;
+  }
+
+  .section-title {
+    margin: 20px 0;
+    font-family: Raleway;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 32px;
+  }
 }
 
-.section-title {
-  margin: 20px 0;
-  font-family: Raleway;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 32px;
-}
-
+@media screen and (max-width: 640px) {
+  .hero .splide__pagination {
+    margin-top: -50px;
+  }
 }

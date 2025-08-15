@@ -43,4 +43,8 @@
     margin-bottom: 24px;
     text-align: center;
   }
+
+  .brands .wrapper {
+    padding: 50px 0 50px 16px;
+  }
 }

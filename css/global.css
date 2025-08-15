@@ -11,14 +11,14 @@ p {
   margin: 0;
 }
 
-.container {
+.wrapper {
   max-width: calc(1470px + 48px);
   margin: 0 auto;
   padding: 90px 24px;
 }
 
 @media screen and (max-width: 768px) {
-  .container {
-    padding: 50px 16px 70px 16px;
+  .wrapper {
+    padding: 50px 16px 50px 16px;
   }
 }
